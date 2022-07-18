@@ -1,0 +1,132 @@
+.hero-section {
+    background-image: url('images/hero-bg.png');
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    height: 1053px;
+}
+
+
+
+.carousel {
+    width: 100%;
+    text-align: center;
+    height: 698px;
+    position: relative;
+}
+
+.carousel-button {
+    position: absolute;
+    background: none;
+    border: none;
+    z-index: 50;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+.carousel-button:hover,
+.carousel-button:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.carousel-button.prev {
+    left: 1rem;
+}
+
+.carousel-button.next {
+    right: 1rem;
+}
+
+.carousel>ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.slide[data-active] {
+    opacity: 1;
+}
+
+.slide>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* .carousel .slide img{
+    margin: auto;
+    width: 99%;
+} */
+
+.bio {
+    width: 508px;
+    height: 683px;
+    display: flex;
+    margin-left: 0.5%;
+    width: 100%;
+}
+
+.bio #headshot {
+    border: 1px solid #12151d;
+    margin-bottom: 35px;
+}
+
+.bio #view-gallery {
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+
+    margin: auto;
+}
+
+.bio #view-gallery a {
+    font-family: 'Oswald';
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #12151d;
+}
+
+.bio #view-gallery img {
+    width: 44px;
+    height: 28px;
+    margin-left: 14px;
+}
+
+.bio #signature {
+    width: 120px;
+    height: 80px;
+    margin-left: 45px;
+}
+
+.bio p {
+    font-family: 'Baloo Tammudu 2', sans-serif;
+    font-size: 17px;
+    font-weight: 100;
+    margin-left: 45px;
+    width: 70%;
+    line-height: 25px;
+    margin-top: 238px;
+}
+
+footer {
+    font-family: 'Baloo Tammudu 2', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 250px;
+}

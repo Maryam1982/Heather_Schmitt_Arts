@@ -1,0 +1,68 @@
+header nav :nth-child(2) {
+    font-weight: 400;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 105px;
+}
+
+#container #desc{
+    padding-top: 10%;
+}
+
+#container>#desc p {
+    font-family: 'Baloo Tammudu 2', sans-serif;
+    font-size: 17px;
+    font-weight: 100;
+    margin-left: 45px;
+    width: 70%;
+    line-height: 25px;
+}
+
+#container>#desc>#character {
+    display: flex;
+    flex-direction: row;
+    margin-left: 45px;
+    margin-top: -2%;
+}
+
+#container>#desc>#contact,
+#container #desc #social {
+    display: flex;
+    flex-direction: row;
+    margin-left: 45px;
+}
+
+#container #desc #social a:nth-child(2){
+    margin-left: 30px;
+}
+
+#container>#desc>#contact>p{
+    font-family: 'Baloo Tammudu 2', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    margin-left: 11px;
+    transform: translateY(10%);
+}
+
+#container>#desc>#contact>img{
+    object-fit: contain;
+}
+
+#container>#desc>#character img {
+    object-fit: contain;
+}
+
+#container>#desc>#character p {
+    font-family: 'Baloo Tammudu 2', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+    transform: translateY(12%);
+}
+
+footer{
+    margin-top: 86px;
+}

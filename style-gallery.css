@@ -1,0 +1,94 @@
+header nav :nth-child(1) {
+    font-weight: 400;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 17rem;
+    padding-right: 17rem;
+    margin-top: 105px;
+    flex-wrap: wrap;
+}
+
+#container>.item {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#container>.item>.pop-up:hover{
+    cursor: pointer;
+}
+
+#container>.item>p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#container>.item>.pop-up {
+    width: 305px;
+    height: 407px;
+    background-color: rgb(255, 255, 255, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -58%);
+    display: none;
+
+}
+
+#container>.item>.pop-up>.spec {
+    margin-top: 30%;
+}
+
+#container>.item>.pop-up>.spec>.title>p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+#container>.item>.pop-up>.spec>.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#container>.item>.pop-up>.spec>.title>hr {
+    color: black;
+    width: 102px;
+    height: 1px;
+    margin-left: 15px;
+    z-index: 10;
+}
+
+
+#container>.item>.pop-up>.spec>.spec-item {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+}
+
+#container>.item>.pop-up>.spec>.spec-item>img {
+    object-fit: contain;
+}
+
+#container>.item>.pop-up>.spec>.spec-item>p {
+    font-family: 'Baloo Tammudu 2';
+    font-size: 16px;
+    font-weight: 100;
+    margin-left: 14px;
+    transform: translateY(8%);
+
+}
+
+footer {
+    margin-top: 10rem;
+}

@@ -1,0 +1,100 @@
+header nav :nth-child(3) {
+    font-weight: 400;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+.container p{
+    font-family: 'Baloo Tammudu 2', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    color: #959595;
+    text-align: center;
+}
+
+.container .social{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 35rem;
+    padding-right: 35rem;
+}
+
+
+
+.container form label{
+    margin-bottom:15px;
+    position:relative;
+    border-bottom:1px solid #12151d;
+    /* width: 500px; */
+}
+
+.container form label:focus-within > span,
+.container form label input:not(:placeholder-shown) + span,
+.container form label textarea:not(:placeholder-shown) + span{
+    transform: translateY(0px);
+    color: #12151d;
+    font-size: 14px;
+}
+
+.container form label span{
+    position:absolute;
+    top:0;
+    left:0;
+    transform:translateY(40px);
+    font-size:16px;
+    transition-duration:300ms;
+    font-family: 'Baloo Tammudu 2', sans-serif;
+    color: #959595;
+}
+
+.container form input, 
+.container form textarea{
+    width:100%;
+    padding:10px 0px;
+    margin-top:20px;
+    border:none;
+    outline:none;
+    font-size: 16px;
+    font-family: 'Baloo Tammudu 2', sans-serif;
+    color: #12151d;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.container form label input::placeholder,
+.container form label textarea::placeholder{
+    color: #959595;
+    opacity: 0;
+}
+
+.container form button{
+    width: 100%;
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 0;
+    height: 55px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.container form button:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+
+
+footer{
+    margin-top: 146px;
+}
