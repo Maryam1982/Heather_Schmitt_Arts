@@ -1,0 +1,162 @@
+header nav a {
+    font-weight: 100;
+}
+
+header nav :nth-child(3) {
+    font-weight: 400;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 105px;
+    margin-left: 0.5%;
+}
+
+#container #desc {
+    padding-top: 10%;
+}
+
+#container>#desc p {
+    font-family: 'Baloo Tammudu 2', sans-serif;
+    font-size: 17px;
+    font-weight: 100;
+    margin-left: 45px;
+    width: 70%;
+    line-height: 25px;
+}
+
+#container>#desc p:nth-child(1),
+#container>#desc p:nth-child(3) {
+    display: none;
+}
+
+#container>#desc>#character {
+    display: flex;
+    flex-direction: row;
+    margin-left: 45px;
+    margin-top: -2%;
+}
+
+#container>#desc>#contact,
+#container #desc #social {
+    display: flex;
+    flex-direction: row;
+    margin-left: 45px;
+}
+
+#container #desc #social a:nth-child(2) {
+    margin-left: 30px;
+}
+
+#container>#desc>#contact>p {
+    font-family: 'Baloo Tammudu 2', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    margin-left: 11px;
+    transform: translateY(10%);
+}
+
+#container>#desc>#contact>img {
+    object-fit: contain;
+}
+
+#container>#desc>#character img {
+    object-fit: contain;
+}
+
+#container>#desc>#character p {
+    font-family: 'Baloo Tammudu 2', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+    transform: translateY(12%);
+}
+
+footer {
+    margin-top: 86px;
+}
+
+@media screen and (min-width: 360px) and (max-width:375px) {
+
+    #container {
+
+        margin-top: 0;
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+
+    #container>img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    #container>#desc p {
+        margin-top: 10px;
+    }
+
+    
+
+}
+
+
+
+@media screen and (min-width: 375px) and (max-width: 550px) {
+
+
+    #container {
+
+        margin-top: 0;
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+
+    #container>img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    #container>#desc p {
+        margin-top: 10px;
+    }
+
+    footer {
+        margin-top: 70px;
+    }
+
+    /* #container>#desc>#contact,
+    #container #desc #social {
+        margin-left: 0;
+    } */
+}
+
+@media screen and (min-width: 551px) and (max-width:1100px) {
+    #container {
+
+        margin-top: 0;
+        margin-left: 0.5%;
+        /* flex-wrap: wrap; */
+    }
+
+    #container>#desc {
+        padding-top: 2%;
+    }
+
+    #container>img {
+        height: 350px;
+        object-fit: scale-down;
+        margin-top: 0;
+    }
+
+    #container>#desc p {
+
+        margin-left: 25px;
+        width: 70%;
+        line-height: 25px;
+    }
+
+    #container>#desc>#contact,
+    #container #desc #social {
+        margin-left: 25px;
+    }
+}

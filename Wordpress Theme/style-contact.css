@@ -1,0 +1,134 @@
+header nav a {
+    font-weight: 100;
+}
+
+header nav :nth-child(4) {
+    font-weight: 400;
+}
+
+#wpcf7-f100-p31-o1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+.container p {
+    font-family: 'Baloo Tammudu 2', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    color: #959595;
+}
+
+.container .social {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* padding-left: 35rem;
+    padding-right: 35rem; */
+}
+
+
+
+.container form label {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+
+.active {
+    transform: translateY(40px);
+    color: lightgray;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    font-weight: 100;
+}
+
+.inactive{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(50px);
+    font-size: 16px;
+    transition-duration: 300ms;
+    font-family: 'Baloo Tammudu 2', sans-serif;
+    color: #959595;
+    width: 120px;
+}
+
+
+.container>.wpcf7>form>p>label>span>input,
+.container form textarea {
+    width: 100%;
+    padding: 10px 0px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Baloo Tammudu 2', sans-serif;
+    color: #12151d;
+    font-weight: 100;
+    line-height: 25px;
+    border-bottom: 1px solid #12151d;
+}
+
+.container form label input::placeholder,
+.container form label textarea::placeholder {
+    color: #959595;
+    opacity: 0;
+
+}
+
+.container form p>input.wpcf7-form-control.has-spinner.wpcf7-submit {
+    width: 100%;
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 0;
+    height: 55px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.container form p>input.wpcf7-form-control.has-spinner.wpcf7-submit:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+#req_fields{
+    text-align: center;
+}
+
+
+
+footer {
+    margin-top: 146px;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 700px) {
+    #wpcf7-f100-p31-o1 {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+}
+
+@media screen and (max-width:701px) {
+    #wpcf7-f100-p31-o1 {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    #wpcf7-f100-p31-o1 {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}

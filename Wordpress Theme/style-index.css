@@ -1,0 +1,239 @@
+header nav a:nth-child(1) {
+    font-weight: 400;
+}
+
+.hero-section {
+    background-image: url('images/hero-bg.png');
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    height: 1053px;
+}
+
+
+
+.carousel {
+    width: 100%;
+    text-align: center;
+    height: 698px;
+    position: relative;
+}
+
+.carousel-button {
+    position: absolute;
+    background: none;
+    border: none;
+    z-index: 50;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+.carousel-button:hover,
+.carousel-button:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.carousel-button.prev {
+    left: 1rem;
+}
+
+.carousel-button.next {
+    right: 1rem;
+}
+
+.carousel>ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.slide[data-active] {
+    opacity: 1;
+}
+
+.slide>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.bio {
+    height: 683px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.5%;
+    width: 100%;
+    margin-top: 9%;
+}
+
+.bio #headshot {
+    margin-bottom: 35px;
+}
+
+.bio #view-gallery {
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+
+    margin: auto;
+}
+
+.bio #view-gallery a {
+    font-family: 'Oswald';
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #12151d;
+}
+
+.bio #view-gallery img {
+    width: 44px;
+    height: 28px;
+    margin-left: 14px;
+}
+
+.bio #signature {
+    width: 120px;
+    height: 80px;
+    margin-left: 45px;
+    
+}
+
+.bio p {
+    font-family: 'Baloo Tammudu 2', sans-serif;
+    font-size: 17px;
+    font-weight: 100;
+    margin-left: 45px;
+    width: 70%;
+    line-height: 25px;
+    margin-top: 238px;
+}
+
+.bio p:nth-child(1),
+.bio p:nth-child(3){
+    display: none;
+}
+
+footer {
+    font-family: 'Baloo Tammudu 2', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 250px;
+}
+
+@media screen and (min-width: 360px) and (max-width:375px) {
+    .carousel {
+        height: 350px;
+    }
+
+    .bio {
+        height: 500px;
+        flex-wrap: wrap; 
+        margin-left: 0;   
+    }
+
+    .bio #headshot {
+        margin-bottom: 10px;
+        object-fit: contain;
+        width: 100%;
+    }
+
+    .bio p {
+        margin-top: 10px;
+    }
+
+    footer {
+        margin-top: 700px;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 375px) and (max-width: 500px) {
+    .carousel {
+        height: 500px;
+    }
+
+    .bio {
+        height: 500px;
+        flex-wrap: wrap; 
+        margin-left: 0;   
+    }
+
+    .bio #headshot {
+        margin-bottom: 10px;
+        object-fit: contain;
+        width: 100%;
+    }
+
+    .bio p {
+        margin-top: 10px;
+    }
+
+    footer {
+        margin-top: 700px;
+    }
+}
+
+@media screen and (min-width: 851px) and (max-width: 1100px) {
+    .bio #headshot {
+        margin-bottom: 10px;
+        width: 350px;
+        object-fit: contain;
+        
+    }
+
+    .bio p {
+        margin-top: 0;
+        margin-left: 25px;
+    }
+
+    .carousel {
+        height: 500px;
+    }
+
+    footer {
+        
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:850px) {
+    .bio #headshot {
+        margin-bottom: 10px;
+        width: 280px;
+        object-fit: contain;
+        
+    }
+
+    .bio p {
+        margin-top: 0;
+        margin-left: 25px;
+    }
+
+    .carousel {
+        height: 500px;
+    }
+
+    footer {
+        
+        margin-top: 180px;
+    }
+}

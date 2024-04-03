@@ -1,0 +1,1 @@
+<h1>This is generic blog post listing page.</h1>

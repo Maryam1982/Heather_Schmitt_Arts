@@ -1,0 +1,175 @@
+header nav a {
+    font-weight: 100;
+}
+
+header nav :nth-child(2) {
+    font-weight: 400;
+}
+
+#container {
+
+    column-count: 2;
+    column-gap: 35px;
+    margin: 105px 5%;
+}
+
+#container>.item {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+#container>.item:hover {
+    cursor: pointer;
+}
+
+
+#container>.item>img {
+    grid-row: 1 / -1;
+    grid-column: 1;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#container>.item>p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+
+    /* grid-row: 2;
+    grid-column: 1; */
+    background-color: rgba(255, 255, 255, .5);
+    
+}
+
+#container>div#modalBox.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+#container .modal .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+    height: auto;
+    display: none;
+}
+
+#container #modalBox.modal .modal-content p#spes {
+    text-align: center;
+    font-family: 'Baloo Tammudu 2';
+    font-size: 16px;
+    font-weight: 100;
+}
+
+
+#container>#modalBox>.modal-content>.spec {
+    margin-top: 5%;
+    /* display: none; */
+}
+
+#container>#modalBox>.modal-content>.spec>.title>p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    /* margin-left: 10%;
+    margin-bottom: 10%; */
+}
+
+#container>#modalBox>.modal-content>.spec>.title {
+    /* display: flex;
+    flex-direction: row; */
+    align-items: center;
+}
+
+#container>#modalBox>.modal-content>.spec>.title>hr {
+    color: black;
+    width: 102px;
+    /* height: 1px; */
+    /* margin-left: 15px; */
+    z-index: 10;
+}
+
+#container #modalBox .modal-content .spec .spec-items-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 20%;
+    margin-bottom: 5%;
+}
+
+
+
+
+#container #modalBox .modal-content .spec .spec-item {
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 10%; */
+}
+
+#container #modalBox .modal-content .spec .spec-item img {
+    object-fit: contain;
+}
+
+#container #modalBox .modal-content .spec .spec-item p {
+    font-family: 'Baloo Tammudu 2';
+    font-size: 16px;
+    font-weight: 100;
+    margin-left: 14px;
+    transform: translateY(35%);
+    flex-shrink: 0;
+
+}
+
+
+
+/* The Close Button */
+#container .modal .modal-content .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#container .modal .modal-content .close:hover,
+#container .modal .modal-content .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 10rem;
+}
+
+@media screen and (max-width:620px) {
+    #container #modalBox .modal-content .spec .spec-items-container{
+        padding: 0;
+    }
+}

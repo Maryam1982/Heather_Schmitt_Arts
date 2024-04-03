@@ -1,0 +1,1 @@
+<h1>This is single post page template for bio_info type.</h1>
